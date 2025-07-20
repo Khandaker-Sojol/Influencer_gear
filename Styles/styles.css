@@ -1,0 +1,178 @@
+/* Universal css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 1240px;
+  background: rgb(255, 255, 255);
+  margin: 0 auto;
+}
+
+/* Shared CSS */
+.primary-btn {
+  border-radius: 41px;
+  padding: 14px 24px 14px 24px;
+  background: rgb(224, 44, 109);
+  border: none;
+  color: rgb(255, 255, 255);
+}
+
+p {
+  color: rgb(58, 58, 58);
+  font-weight: 600;
+}
+/* Custom CSS Star */
+
+/* Header Css */
+header {
+  padding: 40px 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.5rem;
+  color: rgb(58, 58, 58);
+  font-weight: 700;
+}
+.navbar ul {
+  display: flex;
+  gap: 40px;
+}
+.navbar ul li {
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(58, 58, 58);
+}
+
+/* Banner Css */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-info {
+  width: 50%;
+}
+.banner-info h1 {
+  color: rgb(58, 58, 58);
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.banner-info p {
+  margin-bottom: 20px;
+}
+.banner-img {
+  background-image: url(../images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-img img:hover {
+  transform: rotate(360deg) scale(80%);
+  transition: 2s;
+  cursor: pointer;
+}
+.banner-img img {
+  width: 100%;
+}
+
+/* Responsive Css */
+/* for Mobile */
+@media screen and (max-width: 576px) {
+  /* Header Css for Mobile*/
+    header {
+        padding: 20px 0;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: start;
+    }
+    .navbar ul {
+        flex-direction: column;
+        
+        gap: 5px;
+    }
+    .logo{
+        font-size:2rem;
+    }
+
+    /* Banner Css for Mobile */
+    body{
+        padding: 20px;
+    }
+    .banner {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .banner-info {
+        width: 100%;
+    }
+    .banner-info h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    .banner-info p {
+        margin-bottom: 10px;
+        max-width: 570px;
+    }
+    .banner-img {
+        width: 100%;
+    }
+    .banner-img img {
+        width: 100%;
+    }
+}
+
+/* Responsive for Laptop */
+@media screen and (min-width:576px) and (max-width:768px) {
+     /* Header Css for Mobile*/
+    body{
+       padding:0 40px;
+    }
+    header {
+        padding: 30px 0;
+        
+    }
+    .navbar {
+        flex-direction: column;
+        align-items:center;
+    }
+    .navbar ul {
+        gap: 20px;
+    }
+    .logo{
+        font-size:2.5rem;
+        margin-bottom: 10px;
+    }
+
+    /* Banner Css for Mobile */
+
+    .banner {
+        flex-direction: column;
+        
+        gap: 20px;
+    }
+    .banner-info{
+        width: 100%;
+        text-align: center;
+    }
+    .banner-info h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    .banner-info p {
+        margin-bottom: 10px;
+        max-width: 570px;
+    }
+    .banner-img img {
+        width: 100%;
+    }
+}
