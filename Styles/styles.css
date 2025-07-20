@@ -88,7 +88,7 @@ header {
 .sponsors {
   margin: 40px auto;
   padding: 50px 0;
-  max-width: 1050px;
+  max-width: 1100px;
 }
 .sponsors-container {
   padding: 20px;
@@ -170,6 +170,44 @@ header {
   font-weight: 700;
 }
 
+/* Featured Css */
+.featured {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.featured-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  align-items: center;
+}
+.featured-container figure {
+  width: 40%;
+}
+figure img {
+  width: 100%;
+}
+.featured-info {
+  width: 60%;
+}
+.featured-info h1 {
+  color: rgb(10, 8, 38);
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.featured-info p {
+  color: rgb(108, 108, 108);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.featured button {
+  margin: 20px 0;
+  border-radius: 0;
+}
+
 /* Responsive Css */
 /* for Mobile */
 @media screen and (max-width: 576px) {
@@ -233,6 +271,22 @@ header {
   .collection h1 {
     margin-top: -100px;
   }
+  /* Featured Css */
+
+  .featured-container {
+    flex-direction: column-reverse;
+  }
+  .featured-container figure {
+    width: 100%;
+  }
+
+  .featured-info {
+    width: 100%;
+  }
+
+  .featured button {
+    margin-bottom: 0;
+  }
 }
 
 /* Responsive for Laptop */
@@ -293,7 +347,23 @@ header {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-    .collection h1 {
+  .collection h1 {
     margin-top: -100px;
+  }
+  /* Featured Css */
+
+  .featured-container {
+    flex-direction: column-reverse;
+  }
+  .featured-container figure {
+    width: 80%;
+  }
+
+  .featured-info {
+    width: 80%;
+  }
+
+  .featured button {
+    margin-bottom: 0px;
   }
 }
