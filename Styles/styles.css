@@ -87,8 +87,8 @@ header {
 /* Sponsors Section */
 .sponsors {
   margin: 40px auto;
-  padding: 100px 0;
-  max-width: 1110px;
+  padding: 50px 0;
+  max-width: 1050px;
 }
 .sponsors-container {
   padding: 20px;
@@ -103,6 +103,71 @@ header {
   gap: 40px;
   justify-content: space-around;
   align-items: center;
+}
+
+/* Collection Css */
+.collection {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+.collection h1 {
+  text-align: center;
+  color: rgb(58, 58, 58);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.collection-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.collection-card {
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+  padding: 20px;
+}
+.collection img {
+  width: 100%;
+}
+
+.collection h2 {
+  color: rgb(24, 25, 31);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.collection h3 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.rating-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+#star {
+  color: rgb(251, 130, 0);
+}
+#rating {
+  color: rgb(94, 99, 102);
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding-top: 5px;
+}
+.see-more {
+  padding: 20px;
+  color: rgba(224, 44, 109, 0.87);
+  font-weight: 700;
+  text-align: center;
+  text-align: end;
+}
+.collection p {
+  color: rgb(120, 120, 133);
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 /* Responsive Css */
@@ -159,6 +224,15 @@ header {
     flex-wrap: wrap;
     gap: 30px;
   }
+  /* Collection */
+  .collection-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .collection h1 {
+    margin-top: -100px;
+  }
 }
 
 /* Responsive for Laptop */
@@ -212,5 +286,14 @@ header {
     padding: 20px;
     flex-wrap: wrap;
     gap: 30px;
+  }
+  /* Collection */
+  .collection-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+    .collection h1 {
+    margin-top: -100px;
   }
 }
